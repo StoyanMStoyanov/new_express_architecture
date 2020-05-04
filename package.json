@@ -1,0 +1,19 @@
+{
+  "name": "express_architecture_demo",
+  "version": "1.0.0",
+  "description": "Project for study.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoyanMStoyanov/new_express_architecture.git"
+  },
+  "author": "eng. Stoyanov, Stoyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoyanMStoyanov/new_express_architecture/issues"
+  },
+  "homepage": "https://github.com/StoyanMStoyanov/new_express_architecture#readme"
+}
