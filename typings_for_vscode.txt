@@ -1,0 +1,7 @@
+npm install -g typings
+
+typings install dt~node --global --save
+typings install dt~express dt~serve-static dt~express-serve-static-core --global --save
+typings install dt~mogoose --save --global
+
+http://shrekshao.github.io/2016/06/20/vscode-01/
