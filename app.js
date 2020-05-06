@@ -7,12 +7,7 @@ let config = require('./server/config/config')[env]
 
 require('./server/config/database')(config)
 require('./server/config/express')(config, app)
-
-
-app.get('/', (req, res) => {
-  
-  res.render('index')
-})
+require('./server/config/routes')(app)
 
 app.listen(config.port)
 console.log(`Express ready on port ${config.port}.`)
