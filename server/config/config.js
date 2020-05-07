@@ -6,7 +6,8 @@ module.exports = {
     development: {
         rootPath: rootPath,
         db: 'mongodb://localhost:27017/some-express-db',
-        port: 3000
+        port: 3000,
+        sessionSecret: 'Nesto-taino-for-password.'
     },
     staging: {
 
@@ -14,6 +15,7 @@ module.exports = {
     production: {
         rootPath: rootPath,
         db: process.env.MONGO_DB_CONN_STRING,
-        port: process.env.port
+        port: process.env.port,
+        sessionSecret: 'Nesto-taino-for-password.'
     }
 }

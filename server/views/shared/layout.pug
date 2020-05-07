@@ -10,5 +10,19 @@ doctupe
                         a(href='/') Home
                     li
                         a(href='/about') About
+                    li.delimiter
+                    if(currentUser)
+                        li
+                            span= currentUser.username
+                        li
+                            form#logout-form(action="/users/logout" method="post")
+                                a(href="javascript:document.getElementById('logout-form').submit()") Logout
+                    else
+                        li
+                            a(href="/users/register") Register
+                        li
+                            a(href="/users/login") Log In
+                if (globalError)
+                    div.global-error= globalError
                 block main-content
             

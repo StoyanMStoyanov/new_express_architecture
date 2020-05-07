@@ -1,4 +1,5 @@
 let mongoose = require('mongoose')
+
 mongoose.Promise = global.Promise
 
 module.exports = (config) => {
@@ -21,4 +22,6 @@ module.exports = (config) => {
     db.on('error', (err) => {
         console.log('Database error: ' + err)
     })
+
+    require('../data/User').seedAdminUser() 
 }
